@@ -1,11 +1,11 @@
 <testsuites name="Mocha Tests">
-  <testsuite name="Cross Origin Requests" tests="3" errors="0" failures="2" skipped="0" timestamp="2018-05-31T15:35:49" time="0.108">
+  <testsuite name="Cross Origin Requests" tests="3" errors="0" failures="2" skipped="0" timestamp="2018-06-02T02:44:17" time="0.089">
     <testcase classname="Cross Origin Requests" name="should allow all origins" time="0.002">
       <failure message="expected undefined to equal 200">    at Context.&lt;anonymous&gt; (test/test.js:21:37)</failure>
     </testcase>
-    <testcase classname="Cross Origin Requests" name="should return the correct CORS headers" time="0.078">
+    <testcase classname="Cross Origin Requests" name="should return the correct CORS headers" time="0.062">
     </testcase>
-    <testcase classname="Cross Origin Requests" name="should allow all origins" time="0.012">
+    <testcase classname="Cross Origin Requests" name="should allow all origins" time="0.01">
       <failure message="expected { Object (_events, _eventsCount, ...) } to have deep property &apos;header.access-control-allow-origin&apos;">    at getBasePromise.then.then.newArgs (node_modules/chai-as-promised/lib/chai-as-promised.js:302:22)
     at tryCatcher (node_modules/bluebird/js/release/util.js:16:23)
     at Promise._settlePromiseFromHandler (node_modules/bluebird/js/release/promise.js:512:31)
@@ -17,12 +17,12 @@
     at Immediate.Async.drainQueues [as _onImmediate] (node_modules/bluebird/js/release/async.js:17:14)</failure>
     </testcase>
   </testsuite>
-  <testsuite name="Create Todo Item" tests="5" errors="0" failures="3" skipped="0" timestamp="2018-05-31T15:35:49" time="0.122">
-    <testcase classname="Create Todo Item" name="should return a 201 CREATED response" time="0.049">
+  <testsuite name="Create Todo Item" tests="5" errors="0" failures="3" skipped="0" timestamp="2018-06-02T02:44:17" time="0.078">
+    <testcase classname="Create Todo Item" name="should return a 201 CREATED response" time="0.022">
     </testcase>
     <testcase classname="Create Todo Item" name="xxxxxxxx test xxxxxxxxxxx " time="0.001">
     </testcase>
-    <testcase classname="Create Todo Item" name="xxxxxxxxx test xxxxxxxxxxx" time="0.026">
+    <testcase classname="Create Todo Item" name="xxxxxxxxx test xxxxxxxxxxx" time="0.018">
       <failure message="Invalid Chai property: status">    at Object.proxyGetter [as get] (node_modules/chai/lib/chai/utils/proxify.js:66:17)
     at Context.&lt;anonymous&gt; (test/test.js:64:34)</failure>
       <system-out><![CDATA[Promise {
@@ -144,7 +144,7 @@
      buffered: true,
      headers:
       { server: 'nginx/1.13.12',
-        date: 'Thu, 31 May 2018 15:35:49 GMT',
+        date: 'Sat, 02 Jun 2018 02:44:17 GMT',
         'content-type': 'application/json',
         'content-length': '89',
         connection: 'close',
@@ -154,7 +154,7 @@
         'x-frame-options': 'SAMEORIGIN' },
      header:
       { server: 'nginx/1.13.12',
-        date: 'Thu, 31 May 2018 15:35:49 GMT',
+        date: 'Sat, 02 Jun 2018 02:44:17 GMT',
         'content-type': 'application/json',
         'content-length': '89',
         connection: 'close',
@@ -188,7 +188,7 @@
   _receiver0: undefined }
 ]]></system-out>
     </testcase>
-    <testcase classname="Create Todo Item" name="should receive a location hyperlink" time="0.007">
+    <testcase classname="Create Todo Item" name="should receive a location hyperlink" time="0.006">
       <failure message="expected { Object (_events, _eventsCount, ...) } to have deep property &apos;header.location&apos;">    at getBasePromise.then.then.newArgs (node_modules/chai-as-promised/lib/chai-as-promised.js:302:22)
     at tryCatcher (node_modules/bluebird/js/release/util.js:16:23)
     at Promise._settlePromiseFromHandler (node_modules/bluebird/js/release/promise.js:512:31)
@@ -199,7 +199,7 @@
     at Async._drainQueues (node_modules/bluebird/js/release/async.js:143:10)
     at Immediate.Async.drainQueues [as _onImmediate] (node_modules/bluebird/js/release/async.js:17:14)</failure>
     </testcase>
-    <testcase classname="Create Todo Item" name="should create the item" time="0.023">
+    <testcase classname="Create Todo Item" name="should create the item" time="0.015">
       <failure message="expected { Object (_events, _eventsCount, ...) } to have deep property &apos;body.title&apos;">    at getBasePromise.then.then.newArgs (node_modules/chai-as-promised/lib/chai-as-promised.js:302:22)
     at tryCatcher (node_modules/bluebird/js/release/util.js:16:23)
     at Promise._settlePromiseFromHandler (node_modules/bluebird/js/release/promise.js:512:31)
@@ -211,8 +211,8 @@
     at Immediate.Async.drainQueues [as _onImmediate] (node_modules/bluebird/js/release/async.js:17:14)</failure>
     </testcase>
   </testsuite>
-  <testsuite name="Update Todo Item" tests="2" errors="0" failures="2" skipped="0" timestamp="2018-05-31T15:35:49" time="0.061">
-    <testcase classname="Update Todo Item" name="should have completed set to true after PUT update" time="0.014">
+  <testsuite name="Update Todo Item" tests="2" errors="0" failures="2" skipped="0" timestamp="2018-06-02T02:44:17" time="0.044">
+    <testcase classname="Update Todo Item" name="should have completed set to true after PUT update" time="0.012">
       <failure message="expected { Object (_events, _eventsCount, ...) } to have deep property &apos;body.completed&apos;">    at getBasePromise.then.then.newArgs (node_modules/chai-as-promised/lib/chai-as-promised.js:302:22)
     at tryCatcher (node_modules/bluebird/js/release/util.js:16:23)
     at Promise._settlePromiseFromHandler (node_modules/bluebird/js/release/promise.js:512:31)
@@ -223,7 +223,7 @@
     at Async._drainQueues (node_modules/bluebird/js/release/async.js:143:10)
     at Immediate.Async.drainQueues [as _onImmediate] (node_modules/bluebird/js/release/async.js:17:14)</failure>
     </testcase>
-    <testcase classname="Update Todo Item" name="should have completed set to true after PATCH update" time="0.02">
+    <testcase classname="Update Todo Item" name="should have completed set to true after PATCH update" time="0.012">
       <failure message="expected { Object (_events, _eventsCount, ...) } to have deep property &apos;body.completed&apos;">    at getBasePromise.then.then.newArgs (node_modules/chai-as-promised/lib/chai-as-promised.js:302:22)
     at tryCatcher (node_modules/bluebird/js/release/util.js:16:23)
     at Promise._settlePromiseFromHandler (node_modules/bluebird/js/release/promise.js:512:31)
@@ -235,10 +235,10 @@
     at Immediate.Async.drainQueues [as _onImmediate] (node_modules/bluebird/js/release/async.js:17:14)</failure>
     </testcase>
   </testsuite>
-  <testsuite name="Delete Todo Item" tests="2" errors="0" failures="0" skipped="0" timestamp="2018-05-31T15:35:49" time="0.034">
-    <testcase classname="Delete Todo Item" name="should return a 204 NO CONTENT response" time="0.006">
+  <testsuite name="Delete Todo Item" tests="2" errors="0" failures="0" skipped="0" timestamp="2018-06-02T02:44:17" time="0.028">
+    <testcase classname="Delete Todo Item" name="should return a 204 NO CONTENT response" time="0.005">
     </testcase>
-    <testcase classname="Delete Todo Item" name="should delete the item" time="0.01">
+    <testcase classname="Delete Todo Item" name="should delete the item" time="0.009">
     </testcase>
   </testsuite>
 </testsuites>
