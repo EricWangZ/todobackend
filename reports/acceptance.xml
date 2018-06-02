@@ -1,0 +1,244 @@
+<testsuites name="Mocha Tests">
+  <testsuite name="Cross Origin Requests" tests="3" errors="0" failures="2" skipped="0" timestamp="2018-05-31T15:35:49" time="0.108">
+    <testcase classname="Cross Origin Requests" name="should allow all origins" time="0.002">
+      <failure message="expected undefined to equal 200">    at Context.&lt;anonymous&gt; (test/test.js:21:37)</failure>
+    </testcase>
+    <testcase classname="Cross Origin Requests" name="should return the correct CORS headers" time="0.078">
+    </testcase>
+    <testcase classname="Cross Origin Requests" name="should allow all origins" time="0.012">
+      <failure message="expected { Object (_events, _eventsCount, ...) } to have deep property &apos;header.access-control-allow-origin&apos;">    at getBasePromise.then.then.newArgs (node_modules/chai-as-promised/lib/chai-as-promised.js:302:22)
+    at tryCatcher (node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (node_modules/bluebird/js/release/promise.js:693:18)
+    at Async._drainQueue (node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (node_modules/bluebird/js/release/async.js:17:14)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Create Todo Item" tests="5" errors="0" failures="3" skipped="0" timestamp="2018-05-31T15:35:49" time="0.122">
+    <testcase classname="Create Todo Item" name="should return a 201 CREATED response" time="0.049">
+    </testcase>
+    <testcase classname="Create Todo Item" name="xxxxxxxx test xxxxxxxxxxx " time="0.001">
+    </testcase>
+    <testcase classname="Create Todo Item" name="xxxxxxxxx test xxxxxxxxxxx" time="0.026">
+      <failure message="Invalid Chai property: status">    at Object.proxyGetter [as get] (node_modules/chai/lib/chai/utils/proxify.js:66:17)
+    at Context.&lt;anonymous&gt; (test/test.js:64:34)</failure>
+      <system-out><![CDATA[Promise {
+  _bitField: 33554432,
+  _fulfillmentHandler0: [Function],
+  _rejectionHandler0:
+   Response {
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     res:
+      IncomingMessage {
+        _readableState: [ReadableState],
+        readable: false,
+        _events: [Object],
+        _eventsCount: 4,
+        _maxListeners: undefined,
+        socket: [Socket],
+        connection: [Socket],
+        httpVersionMajor: 1,
+        httpVersionMinor: 1,
+        httpVersion: '1.1',
+        complete: true,
+        headers: [Object],
+        rawHeaders: [Array],
+        trailers: {},
+        rawTrailers: [],
+        aborted: false,
+        upgrade: false,
+        url: '',
+        method: null,
+        statusCode: 201,
+        statusMessage: 'Created',
+        client: [Socket],
+        _consuming: false,
+        _dumped: false,
+        req: [ClientRequest],
+        text:
+         '{"url":"http://nginx:8000/todos/1","title":"Walk the dog","completed":false,"order":null}' },
+     request:
+      Request {
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        _agent: false,
+        _formData: null,
+        method: 'POST',
+        url: 'http://nginx:8000/todos',
+        _header: [Object],
+        header: [Object],
+        writable: true,
+        _redirects: 0,
+        _maxRedirects: 5,
+        cookies: '',
+        qs: {},
+        _query: [],
+        qsRaw: [],
+        _redirectList: [],
+        _streamRequest: false,
+        _data: [Object],
+        req: [ClientRequest],
+        protocol: 'http:',
+        host: 'nginx:8000',
+        _endCalled: true,
+        _callback: [Function],
+        res: [IncomingMessage],
+        response: [Circular],
+        called: true },
+     req:
+      ClientRequest {
+        _events: [Object],
+        _eventsCount: 3,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: true,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: true,
+        sendDate: false,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: 24,
+        _hasBody: true,
+        _trailer: '',
+        finished: true,
+        _headerSent: true,
+        socket: [Socket],
+        connection: [Socket],
+        _header:
+         'POST /todos HTTP/1.1\r\nHost: nginx:8000\r\nAccept-Encoding: gzip, deflate\r\nUser-Agent: node-superagent/3.8.3\r\nContent-Type: application/json\r\nAccept: application/json\r\nContent-Length: 24\r\nConnection: close\r\n\r\n',
+        _onPendingData: [Function: noopPendingOutput],
+        agent: [Agent],
+        socketPath: undefined,
+        timeout: undefined,
+        method: 'POST',
+        path: '/todos',
+        _ended: true,
+        res: [IncomingMessage],
+        aborted: undefined,
+        timeoutCb: null,
+        upgradeOrConnect: false,
+        parser: null,
+        maxHeadersCount: null,
+        [Symbol(isCorked)]: false,
+        [Symbol(outHeadersKey)]: [Object] },
+     text:
+      '{"url":"http://nginx:8000/todos/1","title":"Walk the dog","completed":false,"order":null}',
+     body:
+      { url: 'http://nginx:8000/todos/1',
+        title: 'Walk the dog',
+        completed: false,
+        order: null },
+     files: undefined,
+     buffered: true,
+     headers:
+      { server: 'nginx/1.13.12',
+        date: 'Thu, 31 May 2018 15:35:49 GMT',
+        'content-type': 'application/json',
+        'content-length': '89',
+        connection: 'close',
+        vary: 'Accept, Cookie',
+        location: 'http://nginx:8000/todos/1',
+        allow: 'GET, POST, DELETE, HEAD, OPTIONS',
+        'x-frame-options': 'SAMEORIGIN' },
+     header:
+      { server: 'nginx/1.13.12',
+        date: 'Thu, 31 May 2018 15:35:49 GMT',
+        'content-type': 'application/json',
+        'content-length': '89',
+        connection: 'close',
+        vary: 'Accept, Cookie',
+        location: 'http://nginx:8000/todos/1',
+        allow: 'GET, POST, DELETE, HEAD, OPTIONS',
+        'x-frame-options': 'SAMEORIGIN' },
+     statusCode: 201,
+     status: 201,
+     statusType: 2,
+     info: false,
+     ok: true,
+     redirect: false,
+     clientError: false,
+     serverError: false,
+     error: false,
+     created: true,
+     accepted: false,
+     noContent: false,
+     badRequest: false,
+     unauthorized: false,
+     notAcceptable: false,
+     forbidden: false,
+     notFound: false,
+     unprocessableEntity: false,
+     type: 'application/json',
+     links: {},
+     setEncoding: [Function: bound ],
+     redirects: [] },
+  _promise0: undefined,
+  _receiver0: undefined }
+]]></system-out>
+    </testcase>
+    <testcase classname="Create Todo Item" name="should receive a location hyperlink" time="0.007">
+      <failure message="expected { Object (_events, _eventsCount, ...) } to have deep property &apos;header.location&apos;">    at getBasePromise.then.then.newArgs (node_modules/chai-as-promised/lib/chai-as-promised.js:302:22)
+    at tryCatcher (node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (node_modules/bluebird/js/release/promise.js:693:18)
+    at Async._drainQueue (node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (node_modules/bluebird/js/release/async.js:17:14)</failure>
+    </testcase>
+    <testcase classname="Create Todo Item" name="should create the item" time="0.023">
+      <failure message="expected { Object (_events, _eventsCount, ...) } to have deep property &apos;body.title&apos;">    at getBasePromise.then.then.newArgs (node_modules/chai-as-promised/lib/chai-as-promised.js:302:22)
+    at tryCatcher (node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (node_modules/bluebird/js/release/promise.js:693:18)
+    at Async._drainQueue (node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (node_modules/bluebird/js/release/async.js:17:14)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Update Todo Item" tests="2" errors="0" failures="2" skipped="0" timestamp="2018-05-31T15:35:49" time="0.061">
+    <testcase classname="Update Todo Item" name="should have completed set to true after PUT update" time="0.014">
+      <failure message="expected { Object (_events, _eventsCount, ...) } to have deep property &apos;body.completed&apos;">    at getBasePromise.then.then.newArgs (node_modules/chai-as-promised/lib/chai-as-promised.js:302:22)
+    at tryCatcher (node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (node_modules/bluebird/js/release/promise.js:693:18)
+    at Async._drainQueue (node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (node_modules/bluebird/js/release/async.js:17:14)</failure>
+    </testcase>
+    <testcase classname="Update Todo Item" name="should have completed set to true after PATCH update" time="0.02">
+      <failure message="expected { Object (_events, _eventsCount, ...) } to have deep property &apos;body.completed&apos;">    at getBasePromise.then.then.newArgs (node_modules/chai-as-promised/lib/chai-as-promised.js:302:22)
+    at tryCatcher (node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (node_modules/bluebird/js/release/promise.js:693:18)
+    at Async._drainQueue (node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (node_modules/bluebird/js/release/async.js:17:14)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Delete Todo Item" tests="2" errors="0" failures="0" skipped="0" timestamp="2018-05-31T15:35:49" time="0.034">
+    <testcase classname="Delete Todo Item" name="should return a 204 NO CONTENT response" time="0.006">
+    </testcase>
+    <testcase classname="Delete Todo Item" name="should delete the item" time="0.01">
+    </testcase>
+  </testsuite>
+</testsuites>

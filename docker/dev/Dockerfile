@@ -1,4 +1,4 @@
-FROM ericwang/todobackend-base:latest
+FROM yinghuiwang/todobackend-base:latest
 MAINTAINER  Eric Wang <Eric.z.Wang@ericsson.com>
 
 ENV http_proxy=http://10.175.250.81:8080

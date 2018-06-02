@@ -1,4 +1,4 @@
-FROM ericwang/todobackend-base:latest
+FROM yinghuiwang/todobackend-base:latest
 MAINTAINER Eric Wang <eric.z.wang@ericsson.com>
 
 

@@ -20,7 +20,7 @@ app:
   privileged: "true"
 
 test:
-  image: ericwang/todobackend-specs
+  image: yinghuiwang/todobackend-specs
   links:
     - nginx
   environment:
@@ -31,11 +31,10 @@ test:
   privileged: "true"
 
 nginx:
-  image: nginx
+  build: .
+  dockerfile: Dockerfile.nginx
   links:
     - app
-  volumes:
-    - ./todobackend.conf:/etc/nginx/conf.d/todobackend.conf
   ports:
     - "8000:8000"
   volumes_from:
@@ -62,13 +61,12 @@ db:
   privileged: "true"
 
 agent:
-  image: ericwang/ansible
-  volumes:
-    - ../../ansible/probe.yml:/ansible/site.yml
+  image: yinghuiwang/ansible
   links:
     - db
   environment:
     PROBE_HOST: "db"
     PROBE_PORT: "3306"
+  command: ["probe.yml"]
   privileged: "true"
  
